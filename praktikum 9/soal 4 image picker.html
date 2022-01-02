@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Soal 4-image picker</title>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select id="select" onchange="gambar()">
+    <option disabled selected>Pilih Gambar</option><br>
+    <option value="gambar1">gambar1</option>
+    <option value="gambar2">gambar2</option>
+    <option value="gambar3">gambar3</option>
+    <option value="gambar4">gambar4</option>
+    <option value="gambar5">gambar5</option>
+    <option value="gambar6">gambar6</option>
+    <option value="gambar7">gambar7</option>
+    </select>
+    <div id="klik"></div>
+
+    <script>
+        function gambar() {
+            var x = document.getElementById("select").value;
+
+            if (x == "gambar1") {
+                gambar1 = document.getElementById("klik").innerHTML = '<img src="pict/gajah.jpg">'
+                window.alert("ini gambar gajah"  );
+            }
+            if (x == "gambar2") {
+                gambar2 = document.getElementById("klik").innerHTML = '<img  src="pict/kuda.jpg">'
+                window.alert("ini gambar kuda ");
+            }
+            if (x == "gambar3") {
+                gambar3 = document.getElementById("klik").innerHTML = '<img src="pict/lumba.jpg">'
+                window.alert("ini gambar lumba-lumba ");
+            }
+            if (x == "gambar4") {
+                gambar4 = document.getElementById("klik").innerHTML = '<img  src="pict/cupang.jpg">'
+                window.alert("ini gambar ikan cupang ");
+            }
+            if (x == "gambar5") {
+                gambar5 = document.getElementById("klik").innerHTML = '<img src="pict/burung merak.jpg">'
+                window.alert("ini gambar burung merak");
+            }
+            if (x == "gambar6") {
+                gambar6 = document.getElementById("klik").innerHTML = '<img src="pict/burhan.jpg">'
+                window.alert("ini gambar burung hantu ");
+            }
+            if (x == "gambar7") {
+                gambar7 = document.getElementById("klik").innerHTML = '<img  src="pict/elang.jpg">'
+                window.alert("ini gambar burung elang ");
+            }
+            
+        }
+    </script>
+</body>
+</html>

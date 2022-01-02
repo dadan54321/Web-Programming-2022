@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        a{
+            background-color: black;
+            border: 1px solid;
+            color: white;
+            border: 0;
+            padding: 8px 8px;
+            width: 40vh;
+            margin-top: 5px;
+        
+        }
+    </style>
+    <title>Soal 1-Login</title>
+    <script>
+        function Kirim() {
+    let nama =document.getElementById("Nama").value;
+    let password =document.getElementById("Password").value;
+    let Username = "Fadlan Rahmansyah";
+    let pwd = "291202";
+    if (nama == Username && pwd == password) {
+        window.alert( "Login berhasil" )
+    document.getElementById("submit").href = `loginsukses.html`
+        
+
+    } else  {
+        window.alert("Login gagal")
+    }
+}
+    </script>
+</head>
+<body>
+    
+    <form>
+        <p>Presensi Kelas</p>
+        <p>Username</p>
+        <input type="text" id="Nama">
+        <p>Password</p>
+        <input type="text" id="Password">
+        <br><br>
+        <a id="submit" onclick="Kirim()">Login</a>
+    </form>
+</body>
+
+</script>
+</html>
